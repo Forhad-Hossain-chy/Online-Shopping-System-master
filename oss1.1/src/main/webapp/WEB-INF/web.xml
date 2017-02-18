@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>oss</display-name>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+
+    <!--servlet files-->
+
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>com.sadman.controller.IndexController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>category</servlet-name>
+        <servlet-class>com.sadman.controller.CategoryController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>category</servlet-name>
+        <url-pattern>/category</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>item</servlet-name>
+        <servlet-class>com.sadman.controller.ItemController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item</servlet-name>
+        <url-pattern>/item</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cart</servlet-name>
+        <servlet-class>com.sadman.controller.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ordercontroller</servlet-name>
+        <servlet-class>com.sadman.controller.OrderController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ordercontroller</servlet-name>
+        <url-pattern>/ordercontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signupcontroller</servlet-name>
+        <servlet-class>com.sadman.controller.SignupController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signupcontroller</servlet-name>
+        <url-pattern>/signupcontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logincontroller</servlet-name>
+        <servlet-class>com.sadman.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logincontroller</servlet-name>
+        <url-pattern>/logincontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logoutcontroller</servlet-name>
+        <servlet-class>com.sadman.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutcontroller</servlet-name>
+        <url-pattern>/logoutcontroller</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>purchasecontroller</servlet-name>
+        <servlet-class>com.sadman.controller.PurchaseController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>purchasecontroller</servlet-name>
+        <url-pattern>/purchasecontroller</url-pattern>
+    </servlet-mapping>
+
+
+    <!--jsp files-->
+
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <jsp-file>/signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>order</servlet-name>
+        <jsp-file>/order.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>order</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+
+</web-app>
